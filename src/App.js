@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import Navbar from "./componenets/navbar/navbar"
+import Digits from "./componenets/digits/digits"
+import UnderConstruction from "./componenets/underConstruction/underConstruction"
+
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+        <Navbar/>
+        <div className="main">
+            <Switch>
+              <Route path="/digits">
+                <Digits/>
+              </Route>
+              <Route path="/documentReader">
+                <UnderConstruction/>
+              </Route>
+              <Route path="/baymax">
+                <UnderConstruction/>
+              </Route>
+            </Switch>
+        </div>
+      </Router>
     </div>
   );
 }

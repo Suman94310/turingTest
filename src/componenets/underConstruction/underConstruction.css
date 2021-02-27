@@ -1,0 +1,15 @@
+.underConstruction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: #6A6E71;
+}
+
+.underConstruction-image{
+    height: 50%;
+    width: 50%;
+    filter: invert(42%) sepia(12%) saturate(151%) hue-rotate(163deg) brightness(97%) contrast(87%);
+}
