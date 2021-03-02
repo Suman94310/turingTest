@@ -95,7 +95,7 @@ function Digits() {
         // data.append('width', image.width)
         axios({
             method:'post',
-            url:"http://localhost:8000/digits/",
+            url:"https://mlturingtest.herokuapp.com/digits/",
             data:{
                 image: image,
                 height: window.innerHeight/2,
