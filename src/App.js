@@ -16,7 +16,7 @@ function App() {
         <Navbar/>
         <div className="main">
             <Switch>
-              <Route path="/digits">
+              <Route path={["/", "/digits"]}>
                 <Digits/>
               </Route>
               <Route path="/documentReader">
