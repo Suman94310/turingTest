@@ -20,6 +20,8 @@ function Digits() {
         document.getElementById("digits-eraser").onclick =()=>{
             ctx.strokeStyle = "#474A4F"
         }
+
+        Detect()
     },[])
 
     const [prediction, setPrediction] = useState()
